@@ -8,15 +8,18 @@ let tamanhoNome = nome.length
 if (tamanhoNome <= 4) 
 {alert("Precisamos que registre um nome com mais de 5 caracteres")} 
 else
+
 {presenca = prompt("Digite aqui o valor de sua presença:")}
 if (presenca <= 0 || presenca > 10) 
 {alert("O valor da nota de presença deve ser um numeral maior que zero e no máximo 10")} 
-else {
+
+  else {
     materia1 = prompt("Digite a Materia")
     nota1 = parseFloat(prompt(`Digite sua nota em ${materia1}`))
     if (nota1 >= 0 && nota1 <= 10)
         {materia2 = prompt("Digite a Materia")} 
-        else {alert("A nota deve ser um numeral entre 0 e 10")}
+        else
+         {alert("A nota deve ser um numeral entre 0 e 10")}
     nota2 = parseFloat(prompt(`Digite sua nota em ${materia2}`))
     if (nota2 >= 0 && nota2 <= 10)
         {materia3 = prompt("Digite a Materia")} 
